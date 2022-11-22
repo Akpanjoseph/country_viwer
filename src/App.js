@@ -1,9 +1,17 @@
+import React,{useState} from 'react';
+
 import './App.css';
 
+import Header from './components/Header';
+import SearchbarSection from './components/SearchbarSection';
+
 function App() {
+
+  const [darkmood,setDarkmood] = useState(false) ;
   return (
-    <div className='text-center text-red-500'>
-      <p>hello world</p>
+    <div>
+      <Header/>
+      <SearchbarSection/>
     </div>
   );
 }
